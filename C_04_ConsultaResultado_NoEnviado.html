@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Cashtrax - Consulta envió de dinero</title>
+
+  <link rel="stylesheet" href="../Codice-Serti/css/cashtrax.min.css">
+  <link rel="icon" type="image/x-icon" href="/Codice-Serti/img/clientes/feenicia/favicon.ico">
+
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Grupo SERTI">
+  <meta name="description" content="Aliados que marcan diferencia">
+  <meta name="author" content="Delta DG">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="contenedor">
+    <header class="dark cashtrax-header">
+      <div class="container ">
+
+        <h1 class="logoP"></h1>
+
+     
+
+
+      </div>
+  
+
+
+    </header>
+    <!-- Contenido principal -->
+    <main>
+      <section class="tabs-wrapper">
+        <div class="encabezados ">
+          <div class="textos">
+            <h4>Consulta envió de dinero</h4>
+            <p>Revisa el estado, fecha y el monto de tu transacción Cashtrax.</p>
+          </div>
+<button  class="boton-principal acento">
+            Consultar envío
+          </button>
+
+        </div>
+     
+        <div class="tablas">
+
+
+          <table>
+
+            <thead>
+              <tr>
+                <th>Cashtrax ID TX</th>
+                <th>Estatus</th>
+                <th>Fecha y Hora</th>
+
+                <th class="importe">Importe</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-modal="modalCashtraxError">
+                <td>01058485</td>
+                <td><span class="badge error">No enviado</span></td>
+                <td>03 abril 2024 - 15:28:02</td>
+<td class="importe ok">$6,500.00</td>
+
+
+              </tr>
+
+
+            </tbody>
+
+
+          </table>
+ 
+        </div><!--/.contenido-->
+
+      </section>
+
+      <!-- Modales -->
+      <div class="modal-content" id="modalCashtraxOk">
+        <div class="">
+          <div class="modal-close"><span class="icon ico-cerrar" id="modalCerrar"></span></div>
+          <div class="fixed">
+
+            <h6 class="importe">Detalle de envío</h6>
+            <div class="detalle-estatus">
+              <div class="estatus"><span class="badge correcto">Liquidada</span>
+               
+
+              </div>
+              <div class="importe ok">$2,400.00</div>
+            </div>
+
+            <!-- <div class="avisos error">
+    <span class="icon ico-error"></span>
+    <p class="texto"> Esta transacción fue reversada </p>
+</div> -->
+
+            <div class="detalle">
+          
+
+            </div>
+           
+            <hr class="detalleTX">
+          </div>
+
+          <div class="scrollAuto">
+
+
+            <div class="detalle">
+              <div class="iconDtx"><span class="icon ico-ticket"></span></div>
+              <h6 class="texto">Datos de la transacción</h6>
+
+            </div>
+            <table class="detalleTX">
+              <tr>
+                <th>Fecha y hora</th>
+                <td>2024-04-11 19:28 hrs</td>
+              </tr>
+              <tr>
+                <th>Cashtrax ID de Tx</th>
+                <td>878654</td>
+              </tr>
+              <tr>
+                <th>Autorización</th>
+                <td>50421</td>
+              </tr>
+
+              <tr>
+                <th>Moneda</th>
+                <td>MXN</td>
+              </tr>
+
+
+              <tr>
+                <th>Clave de operación</th>
+                <td>81323423010</td>
+              </tr>
+             
+
+
+            </table>
+            <button  class="boton-principal acento w100">
+           Descargar CEP
+          </button>
+
+      
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+            <div class="modal-content" id="modalCashtraxProceso">
+        <div class="">
+          <div class="modal-close"><span class="icon ico-cerrar" id="modalCerrar"></span></div>
+          <div class="fixed">
+
+            <h6 class="importe">Detalle de envío</h6>
+            <div class="detalle-estatus">
+              <div class="estatus"><span class="badge advertencia">En proceso</span>
+               
+
+              </div>
+              <div class="importe ok">$2,400.00</div>
+            </div>
+
+            <!-- <div class="avisos error">
+    <span class="icon ico-error"></span>
+    <p class="texto"> Esta transacción fue reversada </p>
+</div> -->
+
+            <div class="detalle">
+          
+
+            </div>
+           
+            <hr class="detalleTX">
+          </div>
+
+          <div class="scrollAuto">
+
+
+            <div class="detalle">
+              <div class="iconDtx"><span class="icon ico-ticket"></span></div>
+              <h6 class="texto">Datos de la transacción</h6>
+
+            </div>
+            <table class="detalleTX">
+              <tr>
+                <th>Fecha y hora</th>
+                <td>2024-04-11 19:28 hrs</td>
+              </tr>
+              <tr>
+                <th>Cashtrax ID de Tx</th>
+                <td>878654</td>
+              </tr>
+          
+              <tr>
+                <th>Moneda</th>
+                <td>MXN</td>
+              </tr>
+
+
+              <tr>
+                <th>Clave de operación</th>
+                <td>81323423010</td>
+              </tr>
+             
+
+
+            </table>
+          
+
+      
+          </div>
+
+
+        </div>
+      </div>
+   
+   
+
+
+
+
+
+      
+      <!-- Modales -->
+      <div class="modal-content" id="modalCashtraxError">
+        <div class="">
+          <div class="modal-close"><span class="icon ico-cerrar" id="modalCerrar"></span></div>
+          <div class="fixed">
+
+            <h6 class="importe">Detalle de envío</h6>
+            <div class="detalle-estatus">
+              <div class="estatus"><span class="badge error">No enviada</span>
+               
+
+              </div>
+              <div class="importe ok">$2,400.00</div>
+            </div>
+
+            <!-- <div class="avisos error">
+    <span class="icon ico-error"></span>
+    <p class="texto"> Esta transacción fue reversada </p>
+</div> -->
+
+            <div class="detalle">
+          
+
+            </div>
+           
+            <hr class="detalleTX">
+          </div>
+
+          <div class="scrollAuto">
+
+
+            <div class="detalle">
+              <div class="iconDtx"><span class="icon ico-ticket"></span></div>
+              <h6 class="texto">Datos de la transacción</h6>
+
+            </div>
+            <table class="detalleTX">
+              <tr>
+                <th>Fecha y hora</th>
+                <td>2024-04-11 19:28 hrs</td>
+              </tr>
+              <tr>
+                <th>Cashtrax ID de Tx</th>
+                <td>878654</td>
+              </tr>
+              <tr>
+                <th>Autorización</th>
+                <td>50421</td>
+              </tr>
+
+              <tr>
+                <th>Moneda</th>
+                <td>MXN</td>
+              </tr>
+
+
+              <tr>
+                <th>Clave de operación</th>
+                <td>81323423010</td>
+              </tr>
+             
+
+
+            </table>
+            <button  class="boton-contorno w100">
+         <a href="C_05_Formulario_aclaracion.html">Consultar envío</a>
+          </button>
+
+      
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+
+
+
+    <footer class="global-footer">&#169; <a href="#">Términos y
+        condiciones</a> | <a href="#">Aviso de
+        privacidad</a></footer>
+
+  </div>
+
+  <script>
+    // header
+    const burgerButton = document.getElementById("burger");
+    const menu = document.getElementById("menu");
+
+    // Abrir/cerrar menú principal al hacer clic en el botón
+    burgerButton.addEventListener("click", () => {
+      burgerButton.classList.toggle("active");
+      menu.classList.toggle("active");
+      document.body.classList.toggle("menu-active"); 
+    });
+
+    // Cerrar menú y submenús al hacer clic fuera
+    document.addEventListener("click", (event) => {
+      const isOutsideMenu = !menu.contains(event.target) && !burgerButton.contains(event.target);
+
+      if (isOutsideMenu) {
+        burgerButton.classList.remove("active");
+        menu.classList.remove("active");
+        document.body.classList.remove("menu-active"); // Fondo oscuro (opcional)
+
+        // Cerrar todos los submenús activos
+        document.querySelectorAll(".sub_menu.active").forEach((subMenu) => {
+          subMenu.classList.remove("active");
+          subMenu.style.display = "none";
+        });
+      }
+    });
+
+    // dropdown
+    const hasSubMenuElements = document.querySelectorAll(".has_sub_menu");
+
+    hasSubMenuElements.forEach((element) => {
+      element.addEventListener("click", (event) => {
+        event.stopPropagation(); // Evitar que el clic cierre el menú principal
+
+        const subMenu = element.nextElementSibling;
+        const isSubMenuActive = subMenu && subMenu.classList.contains("active");
+
+        // Cerrar otros submenús abiertos
+        document.querySelectorAll(".sub_menu.active").forEach((otherSubMenu) => {
+          otherSubMenu.classList.remove("active");
+          otherSubMenu.style.display = "none";
+        });
+
+        // Alternar el submenú actual
+        if (subMenu) {
+          subMenu.classList.toggle("active", !isSubMenuActive);
+          subMenu.style.display = isSubMenuActive ? "none" : "block";
+        }
+      });
+    });
+
+    // Cerrar submenús al hacer clic en cualquier parte principal
+    document.querySelector("main").addEventListener("click", () => {
+      document.querySelectorAll(".sub_menu.active").forEach((subMenu) => {
+        subMenu.classList.remove("active");
+        subMenu.style.display = "none";
+      });
+    });
+
+  </script>
+
+  <script>
+    document.querySelectorAll('.ico-delete').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.overlay').classList.add('mostrar');
+      });
+    });
+    document.querySelector('.alertas .secundaria').addEventListener('click', () => {
+      document.querySelector('.overlay').classList.remove('mostrar');
+    });
+
+
+
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../Codice-Serti/js/main.js"></script>
+  <script src="../Codice-Serti/js/modal.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
